@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
     ArrayList<Integer> idsSeleccionadas = new ArrayList<>();
     int ids = 0;
     ArrayList<String> plantNames = new ArrayList<>();
+    boolean doubleBackToExitPressedOnce = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,7 +124,6 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
                     layoutParams.width = dialogWindowWidth;
                     dialog.getWindow().setAttributes(layoutParams);
                 }
-
             }
         });
 
@@ -200,8 +203,21 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+
+        if(doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this,"Presiona atrás de nuevo para salir.", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce = false;
+            }
+        }, 2000);
+
     }
 
     //Que hacer cuando se hace click en un item

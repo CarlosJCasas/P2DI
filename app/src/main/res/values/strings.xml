@@ -74,5 +74,6 @@ Las flores, generalmente aromáticas, se agrupan en inflorescencias racimosas, f
     <string name="cancelar">Cancelar</string>
     <string name="confirmacion">¿Eliminar?</string>
     <string name="vacio">No quedan más plantas que agregar a tu jardín.</string>
+    <string name="mijardin">MI JARDÍN</string>
 
 </resources>
