@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Jardín Carlos Casas</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="arceJapones">Arce Japonés</string>
+    <string name="arceCientifico">Acer palmatum</string>
+    <string name="arceJaponesDescripcion">Es un arbusto o árbol pequeño que alcanza alturas de 6-10 m, raramente 16 m; con frecuencia crece como planta accesoria en bosques sombreados. Puede tener múltiples troncos cerca del suelo. En hábito de crecimiento, adopta forma de pirámide (especialmente cuando es joven) o de domo (cuando es más maduro). Sus hojas tienen 4–12 cm de largo y ancho; son palmatilobadas con 5-7-9 lóbulos agudos punteados, de colores purpúreos rojizos, tornándose rojo brillantes en otoño. Es muy decorativo por sus hojas rojo púrpura transparentes en primavera, más tenues en verano, volviéndose rojo violáceas en otoño. Las flores están en pequeñas cimas, las flores individuales con 5-sépalos rojos o púrpuras y 5-pétalos blancuzcos. Fruto: par de sámaras aladas, cada una de 2-3 cm de largo con semillas de 6-8 mm. Sus semillas (así como las de especies similares) requieren estratificarse para germinar.
+
+En la naturaleza, Acer palmatum despliega considerable variación genética: las siembras del mismo árbol paterno pueden mostrar diferencias en rasgos como el tamaño y la forma de hoja, y el color.</string>
+
+    <string name="buganvilla">Buganvilla</string>
+    <string name="buganvillaCientifico">Bougainvillea</string>
+    <string name="buganvillaDescripcion">Son arbustos o árboles pequeños, algunos trepadores perennes en las zonas lluviosas todo el año, o bien caducifolios en las de estación seca; de entre 1 hasta 12 m de altura. Se sujetan en otras plantas usando sus afiladas púas que tienen la punta cubierta de una sustancia cerosa negra. Las hojas son alternas, simples y de forma ovalado–acuminada de 4–12 cm de largo y 2–6 de ancho. Las flores, hermafroditas, son axilares, conspicuas, tubulares, con 5–6 lóbulos cortos, generalmente blancas, organizadas en grupos de 3, cada una insertada en una bráctea persistente de aspecto papiráceo y habitualmente vivamente coloreada de blanco, amarillo, rosado, magenta, purpúreo, rojo, anaranjado… El número de estambres varia de 5 a 10; con filamentos cortos y soldados en la base. El ovario es fusiforme, glabro o pubescente, con estilo lateral corto. El fruto es un aquenio pentámero estrecho, fusiforme o cilíndrico.</string>
+
+    <string name="gardenia">Gardenia</string>
+    <string name="gardeniaCientifico">Gardenieae</string>
+    <string name="gardeniaDescripcion">Son arbustos de hojas perennes de color verde claro, brillantes y lisas. Sus flores son blancas, similares a las rosas y se usan comúnmente como plantas ornamentales. Una flor, colocada en un vasito con agua, puede perfumar con un intenso y agradable aroma una habitación durante un par de días.
+
+Uno de sus principales requerimientos de cultivo es que necesitan crecer en tierras ácidas compuestas de hierro y con abundante humedad. Pueden llegar a tener una altura promedio de 2 m (metros), dependiendo de la especie. Las temporadas más adecuadas para su cultivo son primavera y otoño.</string>
+
+    <string name="girasol">Girasol</string>
+    <string name="girasolCientifico">Helianthus annuus</string>
+    <string name="girasolDescripcion">Helianthus annuus, llamado comúnmente girasol, calom, jáquima, maravilla, mirasol, tlapololote, maíz de teja, acahual o flor de escudo, es una planta herbácea anual de la familia de las asteráceas originaria de Centro y Norteamérica y cultivada como alimenticia, oleaginosa y ornamental en todo el mundo.
+
+El girasol es nativo del continente americano, más precisamente de Norteamérica y Centroamérica. Su cultivo se remonta al año 1000 a. C., pero existen datos que indican que el girasol fue domesticado primero en México alrededor de 2600 años a. C. En muchas culturas amerindias, el girasol fue utilizado como un símbolo que representaba a la deidad del sol, principalmente los aztecas y otomíes en México, y los incas en el Perú.</string>
+
+    <string name="hortensia">Hortensia</string>
+    <string name="hortensiaCientifico">Hydrangea</string>
+    <string name="hortensiaDescripcion">El género Hydrangea incluye plantas ornamentales, comúnmente conocidas como hortensias, nativas del sur y el este de Asia (concretamente de China, Japón, Corea, el Himalaya e Indonesia) y de América. La mayor diversidad de especies de este género se encuentra en las zonas de China, Japón y Corea. La mayoría son arbustos de entre uno a tres metros de altura, algunas son árboles pequeños y otras son lianas que pueden alcanzar los treinta metros trepando por los árboles. Pueden ser de hoja caduca o de hoja perenne, no obstante las más ampliamente cultivadas, que son especies de climas templados, son de hoja caduca. Comprende 201 especies descritas y de estas, solo 43 aceptadas.</string>
+
+    <string name="jazmin">Jazmín</string>
+    <string name="jazminsCientifico">Jasminum</string>
+    <string name="jazminDescripcion">Plantas de porte arbustivo o trepador perennifolias, caducifolias o semicaducifolias. Los tallos son cuadrangulares, de color verde o grisáceo, profusamente ramificados. Hojas dispuestas de forma alterna u opuesta; pueden ser trifoliadas o imparipinnadas. Las inflorescencias son racimosas, normalmente surgen de las axilas de las hojas.
+
+Las flores, comúnmente blancas –si bien hay algunas especies amarillas y rojizas–, son hermafroditas. Tienen un cáliz tubular, con cinco pétalos y dos estambres unidos al tubo de la corola con anteras amarillas. Los frutos son bayas de color negro al madurar con 1 a 4 semillas.​ La fragancia que exhalan las flores es muy intensa y se percibe como un aroma dulce.</string>
+
+    <string name="orquidea">Orquídea</string>
+    <string name="orquideaCientifico">Orchidaceae</string>
+    <string name="orquideaDescripcion">Las orquídeas u orquidáceas (nombre científico Orchidaceae) son una familia de plantas monocotiledóneas que se distinguen por la complejidad de sus flores y por sus interacciones ecológicas con los agentes polinizadores y con los hongos con los que forman micorrizas.
+
+La familia comprende aproximadamente 25 000 especies (algunas fuentes informan de 30 000), por lo que resulta ser una de las familias con mayor riqueza específica entre las angiospermas. A esta diversidad natural se le suman 60 000 híbridos y variedades producidas por los floricultores.</string>
+
+    <string name="pasiflora">Pasiflora</string>
+    <string name="pasifloraCientifico">Passifloraceae</string>
+    <string name="pasifloraDescripcion">Las pasionarias son enredaderas de varios metros de altura o bien plantas erectas, semierectas y semirrastreras, siendo en este último caso menores de un metro de altura. Pueden ser glabras a densamente pubescentes, con tricomas simples, raramente glandulares. Presentan rizomas de igual o mayor diámetro que los tallos aéreos. Los tallos son teretes a angulosos, en algunos casos el tallo posee alas laminares de distinta magnitud. Presentan zarcillos axilares simples, rectos, circinados o espiralados durante el desarrollo de la yema apical, curvados hacia el ápice en estado juvenil.</string>
+
+    <string name="plumbago">Plumbago</string>
+    <string name="plumbagoCientifico">Plumbago auriculata</string>
+    <string name="plumbagoDescripcion">Plumbago es un género de 10 a 20 especies de fanerógamas pertenecientes a la familia Plumbaginaceae, nativas de regiones templadas cálidas a tropicales del mundo. El nombre Plumbago deriva del latín plumbum ("plomo"), tanto por el color azul plomizo de las flores de algunas especies, o debido a que antiguamente se creía que era la cura para el envenenamiento con plomo.
+
+El género incluye a plantas herbáceas y a arbustos que alcanzan de 50 cm a 2 m de altura. Las hojas son espiraladas, simples, enteras, de 0,5 a 12 cm de largo, con una base y frecuentemente con márgenes pilosos. Las flores son blancas, azules, púrpuras, rojas o rosadas, con la corola tubular y cinco pétalos. Las flores se disponen en inflorescencias llamadas racimos.</string>
+
+    <string name="rosa">Rosa</string>
+    <string name="rosaCientifico">Rosoideae</string>
+    <string name="rosaDescripcion">Los rosales son arbustos o trepadoras (a veces colgantes), generalmente espinosos, que alcanzan de dos a cinco metros de altura, en ocasiones, pueden llegar a los 20 m trepando sobre otras plantas.
+
+Las flores, generalmente aromáticas, se agrupan en inflorescencias racimosas, formando corimbos. Son flores completas, hermafroditas, regulares, con simetría radial (actinomorfas). El perianto está bien desarrollado. El hipanto o receptáculo floral prominente en forma de urna (tálamo cóncavo y profundo).</string>
+    <string name="arceJaponesPath">R.drawable.arce_japones</string>
+    <string name="buganvillaPath">R.drawable.buganvilla</string>
+    <string name="gardeniaPath">R.drawable.gardenia</string>
+    <string name="girasolesPath">R.drawable.girasoles</string>
+    <string name="hortensiaPath">R.drawable.hortensia</string>
+    <string name="jazminPath">R.drawable.jazmin</string>
+    <string name="orquideasPath">R.drawable.orquideas</string>
+    <string name="pasifloraPath">R.drawable.pasiflora</string>
+    <string name="plumbagoPath">R.drawable.plumbago</string>
+    <string name="rosaPath">R.drawable.rosa</string>
+    <string name="activity2_name">Añadir plantas</string>
+
+    <string name="addPlanta">Añadir plantas</string>
+    <string name="seguro_aceptar">¿Estás seguro?</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="confirmacion">¿Eliminar?</string>
+    <string name="vacio">No quedan más plantas que agregar a tu jardín.</string>
+
+</resources>
