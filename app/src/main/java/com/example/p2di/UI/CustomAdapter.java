@@ -22,13 +22,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     LayoutInflater mInflater;
     ArrayList<Planta> listaPlantas;
 
-    public CustomAdapter(Context context, ArrayList<Planta> listaPlantas){
+    public CustomAdapter(Context context, ArrayList<Planta> listaPlantas) {
         this.mInflater = LayoutInflater.from(context);
         this.listaPlantas = listaPlantas;
     }
-
-
-
     @Override
     public CustomAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -37,7 +34,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder( CustomAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(CustomAdapter.ViewHolder holder, int position) {
 
         holder.imagen.setImageResource(listaPlantas.get(position).getImagen());
         holder.nombreImagen.setText(listaPlantas.get(position).getNombre());
@@ -49,9 +46,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     }
 
 
-
     //ViewHolder
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener {
         ImageView imagen;
         TextView nombreImagen;
 
@@ -74,24 +70,26 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
         @Override
         public boolean onLongClick(View v) {
-            if (itemLongClickListener !=null){
+            if (itemLongClickListener != null) {
                 itemLongClickListener.onItemLongClick(v, getAdapterPosition());
             }
             return true;
         }
     }
-    public void  setClickListener(ItemClickListener itemClickListener){
+
+    public void setClickListener(ItemClickListener itemClickListener) {
         this.clickListener = itemClickListener;
     }
-    public interface  ItemClickListener{
+
+    public interface ItemClickListener {
         void onItemCLick(View view, int position);
     }
 
-    public void setLongClickListener(ItemLongClickListener itemLongClickListener){
+    public void setLongClickListener(ItemLongClickListener itemLongClickListener) {
         this.itemLongClickListener = itemLongClickListener;
     }
 
-    public interface  ItemLongClickListener{
+    public interface ItemLongClickListener {
         void onItemLongClick(View view, int position);
     }
 }

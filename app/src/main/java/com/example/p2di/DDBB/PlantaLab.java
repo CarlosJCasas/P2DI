@@ -8,12 +8,12 @@ import com.example.p2di.core.Planta;
 
 import java.util.List;
 
-public class PlantaLab implements PlantaDao{
+public class PlantaLab implements PlantaDao {
 
-    private static  PlantaLab plantLab;
+    private static PlantaLab plantLab;
     private PlantaDao plantDao;
 
-    private PlantaLab(Context context){
+    private PlantaLab(Context context) {
         Context appContext = context.getApplicationContext();
         PlantaBD database = Room.databaseBuilder(appContext, PlantaBD.class,
                 "planta").allowMainThreadQueries().build();
@@ -21,12 +21,13 @@ public class PlantaLab implements PlantaDao{
         plantDao = database.getPlantas();
     }
 
-    public static PlantaLab get(Context context){
-        if (plantLab==null){
+    public static PlantaLab get(Context context) {
+        if (plantLab == null) {
             plantLab = new PlantaLab((context));
         }
         return plantLab;
     }
+
     @Override
     public List<Planta> getPlantas() {
         return plantDao.getPlantas();

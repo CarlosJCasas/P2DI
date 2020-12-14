@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
 import java.io.Serializable;
 import java.util.UUID;
 
-@Entity (tableName = "planta")
+@Entity(tableName = "planta")
 public class Planta implements Serializable {
 
     @PrimaryKey
@@ -34,7 +34,7 @@ public class Planta implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public Planta(String nombre,String nombreCientifico, String descripcion, int imagen) {
+    public Planta(String nombre, String nombreCientifico, String descripcion, int imagen) {
         this.nombre = nombre;
         this.nombreCientifico = nombreCientifico;
         this.descripcion = descripcion;
@@ -83,7 +83,7 @@ public class Planta implements Serializable {
 
     @Override
     public String toString() {
-        return "Planta{"+
+        return "Planta{" +
                 "nombre='" + nombre + '\'' +
                 "descripcion='" + descripcion + '\'' +
                 "imagen=" + imagen +

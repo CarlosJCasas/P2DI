@@ -34,7 +34,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class MainActivity extends AppCompatActivity implements CustomAdapter.ItemClickListener, CustomAdapter.ItemLongClickListener{
+public class MainActivity extends AppCompatActivity implements CustomAdapter.ItemClickListener, CustomAdapter.ItemLongClickListener {
     PlantaLab myPLantaLab;
     ArrayList<Planta> listaDePlantas;
     CustomAdapter myAdapter;
@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
     boolean doubleBackToExitPressedOnce = false;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,16 +55,16 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
 
 
         //Crea todas las plantas y las mete en una lista
-        Planta arce = new Planta(getString(R.string.arceJapones), getString(R.string.arceCientifico) ,getString(R.string.arceJaponesDescripcion),R.drawable.acer_palmatum);
-        Planta buganvilla = new Planta(getString(R.string.buganvilla), getString(R.string.buganvillaCientifico),getString(R.string.buganvillaDescripcion),R.drawable.buganvilla);
-        Planta gardenia = new Planta(getString(R.string.gardenia), getString(R.string.gardeniaCientifico) ,getString(R.string.gardeniaDescripcion),R.drawable.gardenia);
-        Planta girasol = new Planta(getString(R.string.girasol), getString(R.string.girasolCientifico),getString(R.string.girasolDescripcion),R.drawable.girasoles);
-        Planta hortensia = new Planta(getString(R.string.hortensia), getString(R.string.hortensiaCientifico),getString(R.string.hortensiaDescripcion),R.drawable.hortensia);
-        Planta jazmin = new Planta(getString(R.string.jazmin), getString(R.string.jazminsCientifico),getString(R.string.jazminDescripcion),R.drawable.jazmin);
-        Planta orquidea = new Planta(getString(R.string.orquidea), getString(R.string.orquideaCientifico),getString(R.string.orquideaDescripcion),R.drawable.orquideas);
-        Planta pasiflora = new Planta(getString(R.string.pasiflora), getString(R.string.pasifloraCientifico),getString(R.string.pasifloraDescripcion),R.drawable.pasiflora);
-        Planta plumbago = new Planta(getString(R.string.plumbago), getString(R.string.plumbagoCientifico),getString(R.string.plumbagoDescripcion),R.drawable.plumbago);
-        Planta rosa = new Planta(getString(R.string.rosa), getString(R.string.rosaCientifico),getString(R.string.rosaDescripcion),R.drawable.rosa);
+        Planta arce = new Planta(getString(R.string.arceJapones), getString(R.string.arceCientifico), getString(R.string.arceJaponesDescripcion), R.drawable.acer_palmatum);
+        Planta buganvilla = new Planta(getString(R.string.buganvilla), getString(R.string.buganvillaCientifico), getString(R.string.buganvillaDescripcion), R.drawable.buganvilla);
+        Planta gardenia = new Planta(getString(R.string.gardenia), getString(R.string.gardeniaCientifico), getString(R.string.gardeniaDescripcion), R.drawable.gardenia);
+        Planta girasol = new Planta(getString(R.string.girasol), getString(R.string.girasolCientifico), getString(R.string.girasolDescripcion), R.drawable.girasoles);
+        Planta hortensia = new Planta(getString(R.string.hortensia), getString(R.string.hortensiaCientifico), getString(R.string.hortensiaDescripcion), R.drawable.hortensia);
+        Planta jazmin = new Planta(getString(R.string.jazmin), getString(R.string.jazminsCientifico), getString(R.string.jazminDescripcion), R.drawable.jazmin);
+        Planta orquidea = new Planta(getString(R.string.orquidea), getString(R.string.orquideaCientifico), getString(R.string.orquideaDescripcion), R.drawable.orquideas);
+        Planta pasiflora = new Planta(getString(R.string.pasiflora), getString(R.string.pasifloraCientifico), getString(R.string.pasifloraDescripcion), R.drawable.pasiflora);
+        Planta plumbago = new Planta(getString(R.string.plumbago), getString(R.string.plumbagoCientifico), getString(R.string.plumbagoDescripcion), R.drawable.plumbago);
+        Planta rosa = new Planta(getString(R.string.rosa), getString(R.string.rosaCientifico), getString(R.string.rosaDescripcion), R.drawable.rosa);
 
         listaDePlantas.add(arce);
         listaDePlantas.add(buganvilla);
@@ -77,29 +76,27 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         listaDePlantas.add(pasiflora);
         listaDePlantas.add(plumbago);
         listaDePlantas.add(rosa);
-        for (Planta plant : listaDePlantas){
+        for (Planta plant : listaDePlantas) {
             plant.setId(ids);
             ids++;
         }
-        if(myPLantaLab.getPlantas().isEmpty()){
-            for(Planta plant : listaDePlantas){
+        if (myPLantaLab.getPlantas().isEmpty()) {
+            for (Planta plant : listaDePlantas) {
                 myPLantaLab.addPlanta(plant);
             }
         }
-        for(Planta plant : listaDePlantas){
+        for (Planta plant : listaDePlantas) {
             plantNames.add(plant.getNombre());
         }
-
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2 ,StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setClickable(true);
-
 
 
         FloatingActionButton fab = findViewById(R.id.floatingActionButton);
@@ -107,9 +104,9 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!plantNames.isEmpty()){
+                if (!plantNames.isEmpty()) {
                     addPlantas();
-                }else{
+                } else {
                     AlertDialog.Builder alertDia = new AlertDialog.Builder(MainActivity.this);
                     alertDia.setView(R.layout.jardin_vacio);
                     AlertDialog dialog = alertDia.create();
@@ -135,17 +132,17 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
 
         //Cargar de las sharedPreferences lista de ids
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
-        String idsGuardadas = preferences.getString("valoresIds",null);
-        if(idsGuardadas!=null){
+        String idsGuardadas = preferences.getString("valoresIds", null);
+        if (idsGuardadas != null) {
             StringTokenizer tokenizer = new StringTokenizer(idsGuardadas, ",");
-            while(tokenizer.hasMoreTokens()){
+            while (tokenizer.hasMoreTokens()) {
                 int id = Integer.parseInt(tokenizer.nextToken());
                 idsSeleccionadas.add(id);
             }
-            for (int id : idsSeleccionadas){
+            for (int id : idsSeleccionadas) {
                 plantasSeleccionadas.add(myPLantaLab.getPlanta(id));
             }
-            for (Planta planta : plantasSeleccionadas){
+            for (Planta planta : plantasSeleccionadas) {
                 plantNames.remove(planta.getNombre());
             }
             myAdapter.notifyDataSetChanged();
@@ -160,10 +157,10 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         StringBuilder stringBuilder = new StringBuilder();
-        for (int id : idsSeleccionadas){
+        for (int id : idsSeleccionadas) {
             stringBuilder.append(id).append(",");
         }
-        editor.putString("valoresIds",stringBuilder.toString());
+        editor.putString("valoresIds", stringBuilder.toString());
         editor.apply();
     }
 
@@ -205,12 +202,12 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
     public void onBackPressed() {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 
-        if(doubleBackToExitPressedOnce) {
+        if (doubleBackToExitPressedOnce) {
             super.onBackPressed();
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this,"Presiona atrás de nuevo para salir.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Presiona atrás de nuevo para salir.", Toast.LENGTH_SHORT).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -232,7 +229,7 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         eliminarPlanta(position);
     }
 
-    public void addPlantas(){
+    public void addPlantas() {
 
         ArrayAdapter<String> plantsAdapter = new ArrayAdapter<>(this.getApplicationContext(), android.R.layout.simple_list_item_1, plantNames);
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
@@ -269,9 +266,9 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
                     public void onClick(DialogInterface dialog, int which) {
                         for (int i : selectedItems) {
                             int id;
-                            for(Planta plant : listaDePlantas){
-                                if(plant.getNombre().equalsIgnoreCase(plantNames.get(i))){
-                                    id=plant.getId();
+                            for (Planta plant : listaDePlantas) {
+                                if (plant.getNombre().equalsIgnoreCase(plantNames.get(i))) {
+                                    id = plant.getId();
                                     Planta planta = myPLantaLab.getPlanta(id);
                                     idsSeleccionadas.add(id);
                                     nombresSeleccionados.add(plantNames.get(i));
@@ -280,7 +277,7 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
                                 }
                             }
                         }
-                        for(String nombre : nombresSeleccionados){
+                        for (String nombre : nombresSeleccionados) {
                             plantNames.remove(nombre);
                             plantsAdapter.notifyDataSetChanged();
                         }
@@ -295,7 +292,7 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         alertDialog.create().show();
     }
 
-    public void eliminarPlanta(int position){
+    public void eliminarPlanta(int position) {
         //Crea alertDialog para confirmar
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setView(R.layout.eliminar);
@@ -329,9 +326,6 @@ public class MainActivity extends AppCompatActivity implements CustomAdapter.Ite
         layoutParams.width = dialogWindowWidth;
         dial.getWindow().setAttributes(layoutParams);
 //        builder.create().show();
-
-
-
 
 
     }
